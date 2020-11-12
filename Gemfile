@@ -57,3 +57,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "octokit", "~> 4.19"
+
+gem "haml", "~> 5.2"
+gem "haml-rails", "~> 2.0"

@@ -1,0 +1,10 @@
+= form_for '', html: { method: 'get' } do |f|
+  = f.search_field :search_string
+  = f.submit 'Search'
+
+- if @issues.blank?
+  No issue found
+- else
+  - @issues.each do |issue|
+    %h3= issue[:title]
+    %p= "##{issue[:number]} opened on #{issue[:created_at]} by #{issue[:user][:login]}"
